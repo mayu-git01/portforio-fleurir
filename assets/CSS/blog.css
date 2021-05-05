@@ -1,0 +1,167 @@
+*{
+  box-sizing: border-box;
+  font-family: YuMincho,serif;
+  border: none;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  color: #707070;
+}
+
+.warapper{
+  width: 100%;
+}
+
+.warapper{
+  /* border: 1px solid red; */
+  width: 100%;
+  background-image: url(../../images/contact3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding-bottom: 5em;
+}
+
+.blog{
+  text-align: center;
+}
+
+.blog-title h1{
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  padding-top: 5em;
+}
+
+.blog-title p{
+  font-size: 1.2em;
+}
+
+
+
+/* accordion */
+.container_accordion {
+  margin: 40px auto 60px;
+  width: 60%;
+}
+
+.accordion .accordion-item {
+  border-bottom: 1px solid #707070;
+}
+.accordion .accordion-item button[aria-expanded=true] {
+  border-bottom: 1px solid #D8B5AF;
+}
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 1em 0;
+  color: #313131;
+  font-size: 1.8em;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.accordion button:hover, .accordion button:focus {
+  cursor: pointer;
+  color: #D8B5AF;
+}
+.accordion button:hover::after, .accordion button:focus::after {
+  cursor: pointer;
+  color: #D8B5AF;
+  border: 1px solid #D8B5AF;
+}
+.accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 2.5rem;
+  right: 2em;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+.accordion button[aria-expanded=true] {
+  color: #D8B5AF;
+}
+.accordion button[aria-expanded=true] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded=true] + .accordion-content {
+  opacity: 1;
+  max-height: 21em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+  opacity: 0;
+  background-color: rgba(219,225,226,0.3);
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+
+.accordion .accordion-content p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 2em 0;
+  text-align: center;
+}
+
+/* home icon area */
+.home{
+  position: fixed;
+  top: 0.6rem;
+  right: 1.2rem;
+}
+
+.home img{
+  animation: fuwafuwa 3s infinite ease-in-out .8s alternate;
+  background: url(../img/ico-apple.svg) no-repeat center center / 60px auto;
+  display: inline-block;
+  transition: 1.5s ease-in-out;
+  width: 70px;
+  height: 70px;
+  margin-top: 15px;
+}
+ 
+@keyframes fuwafuwa {
+  0% {
+    transform:translate(0, 0) rotate(-7deg);
+  }
+  50% {
+    transform:translate(0, -7px) rotate(0deg);
+  }
+  100% {
+    transform:translate(0, 0) rotate(7deg);
+  }
+}

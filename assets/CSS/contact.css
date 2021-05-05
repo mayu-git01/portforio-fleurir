@@ -1,0 +1,129 @@
+*{
+  box-sizing: border-box;
+  font-family: YuMincho,serif;
+  border: none;
+  color: #707070;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+}
+
+
+.warapper{
+  /* border: 1px solid red; */
+  width: 100%;
+  background-image: url(../../images/contact3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding-bottom: 5em;
+}
+
+.contact-title{
+  /* border: 1px solid blue; */
+  text-align: center;
+  padding-top: 5rem;
+  font-size: 2em;
+}
+
+.contact-form{
+  text-align: center;
+}
+
+.contact-form input {
+  /* border: 1px solid blue; */
+  width: 50%;
+  margin-top: 0.5em;
+  border-radius: 2px;
+  padding-left: 1em;
+}
+
+.contact-form textarea{
+  width: 50%;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  border-radius: 3px;
+   padding-left: 1em;
+}
+
+#submit{
+  width: 10%;
+  margin-bottom: 1em;
+  font-size: 1.5em;
+  background-color: #CEBAB9;
+  padding-left: 0;
+  text-decoration: none;
+}
+
+.messege{
+  display: none;
+  border: 3px solid #542F1E;
+  width: 30%;
+  /* height: 15em; */
+  /* margin: 0 auto; */
+  /* background-color: #E4E8E8; */
+  background-color: #D8B5AF;
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.messege p{
+  font-size: 1.5em;
+}
+
+.messege a{
+  font-size: 1.5em;
+  
+}
+
+.messege a:hover{
+  font-size: 2em;
+  color: #542F1E;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+
+/* responsive display tablet*/
+@media screen and (max-width: 1024px){
+  .warapper{
+      width: 100%;
+  }
+  .messege{
+    width: 50%;
+    top: 35%;
+    left: 25%;
+  }
+  
+}
+
+/* responsive display mobile */
+@media screen and (max-width: 425px){
+  .warapper{
+    width: 100%;
+  }
+
+  .contact-title{
+    font-size: 1.3em;
+  }
+
+  #submit{
+    width: 20%;
+  }
+
+  .messege{
+    width: 70%;
+    top: 28%;
+    left: 15%;
+  }
+  .messege p{
+    font-size: 1em;
+  }
+
+}
